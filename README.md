@@ -1,14 +1,11 @@
-Aquí tienes el **README completo en formato Markdown**, listo para pegar directamente en tu repositorio.
 
----
-
-````markdown
+````bash
 # Delvia – Landing Page de Mermeladas Artesanales
 
 Landing page profesional para **Delvia**, una marca de mermeladas artesanales elaboradas con ingredientes naturales. El sitio comunica la esencia de la marca: calidad, frescura y una experiencia dulce y auténtica.
-
+```
 ---
-
+````bash
 ## Objetivo del Proyecto
 
 El propósito de esta landing page es presentar de manera clara, atractiva y funcional los productos de Delvia, destacando:
@@ -21,9 +18,9 @@ El propósito de esta landing page es presentar de manera clara, atractiva y fun
 - Formulario de contacto y navegación completa.
 
 La página está diseñada para ser ligera, responsiva, animada y visualmente agradable.
-
+```
 ---
-
+````bash
 ## Tecnologías Utilizadas
 
 - **Vite** – Bundler rápido para desarrollo y producción.
@@ -34,9 +31,9 @@ La página está diseñada para ser ligera, responsiva, animada y visualmente ag
 - **CSS personalizado** – Variables, layouts y estilo modular.
 - **React Icons** – Íconos estandarizados.
 - **Prettier** – Formateo automático del código.
-
+```
 ---
-
+````bash
 ## Estructura del Sitio
 
 El sitio se compone de las siguientes secciones:
@@ -50,13 +47,13 @@ El sitio se compone de las siguientes secciones:
 - **Formulario de Contacto** – Envío directo.
 - **Página "Saber Más"** – Documento completo con toda la información del proyecto.
 - **Footer** – Contiene enlaces y créditos.
-
+```
 ---
-
+````bash
 ## Instalación
 
 Clona el repositorio:
-
+```
 ```bash
 git clone https://github.com/alan-neurpoint-ai/delvia-landing.git
 cd delvia-landing
@@ -153,14 +150,3 @@ Este proyecto es de uso académico y demostrativo.
 No está permitida su explotación comercial sin autorización.
 
 ---
-
-```
-
----
-
-Si quieres, también te puedo generar:
-
-- Badges para GitHub (build, version, license, etc.)
-- Una versión del README más visual con imágenes
-- Instrucciones completas para deploy en Vercel, Netlify o GitHub Pages
-```
