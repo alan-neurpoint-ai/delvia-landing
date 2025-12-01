@@ -1,73 +1,166 @@
-# React + TypeScript + Vite
+Aquí tienes el **README completo en formato Markdown**, listo para pegar directamente en tu repositorio.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+````markdown
+# Delvia – Landing Page de Mermeladas Artesanales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Landing page profesional para **Delvia**, una marca de mermeladas artesanales elaboradas con ingredientes naturales. El sitio comunica la esencia de la marca: calidad, frescura y una experiencia dulce y auténtica.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Objetivo del Proyecto
 
-## Expanding the ESLint configuration
+El propósito de esta landing page es presentar de manera clara, atractiva y funcional los productos de Delvia, destacando:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Sus sabores artesanales.
+- Sus procesos naturales.
+- Sus características diferenciadoras.
+- Testimonios reales.
+- Información detallada del producto.
+- Formulario de contacto y navegación completa.
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+La página está diseñada para ser ligera, responsiva, animada y visualmente agradable.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+## Tecnologías Utilizadas
+
+- **Vite** – Bundler rápido para desarrollo y producción.
+- **React** – Biblioteca para interfaz de usuario.
+- **TypeScript** – Tipado estático para mayor seguridad.
+- **React Router** – Sistema de rutas para SPA.
+- **AOS.js** – Animaciones en scroll.
+- **CSS personalizado** – Variables, layouts y estilo modular.
+- **React Icons** – Íconos estandarizados.
+- **Prettier** – Formateo automático del código.
+
+---
+
+## Estructura del Sitio
+
+El sitio se compone de las siguientes secciones:
+
+- **Navbar** – Navegación fija y responsiva.
+- **Header (Hero)** – Mensaje principal y llamada a la acción.
+- **About / ¿Quiénes somos?** – Información de la marca.
+- **Productos** – Carrusel animado con sabores destacados.
+- **Galería** – Fotografías del producto.
+- **Testimonios** – Sección con diseño moderno.
+- **Formulario de Contacto** – Envío directo.
+- **Página "Saber Más"** – Documento completo con toda la información del proyecto.
+- **Footer** – Contiene enlaces y créditos.
+
+---
+
+## Instalación
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/alan-neurpoint-ai/delvia-landing.git
+cd delvia-landing
+````
+
+Instala dependencias:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Ejecuta en desarrollo:
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+```bash
+npm run dev
+```
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+---
+
+## Scripts Disponibles
+
+| Comando           | Descripción                            |
+| ----------------- | -------------------------------------- |
+| `npm run dev`     | Inicia servidor de desarrollo          |
+| `npm run build`   | Compila la aplicación para producción  |
+| `npm run preview` | Previsualiza el build de producción    |
+| `npm run format`  | Formatea el código con Prettier        |
+| `npm run lint`    | Linter de código (si está configurado) |
+
+---
+
+## Formateo del Código
+
+Este proyecto incluye un script para formatear el código automáticamente:
+
+```bash
+npm run format
+```
+
+---
+
+## Estructura de Carpetas
+
+```
+src/
+  assets/           # Logos e imágenes
+  components/       # Componentes UI reutilizables
+  pages/            # Páginas principales
+  sections/         # Secciones de la landing
+  styles/           # Archivos CSS
+  constants/        # Datos y textos estructurados
+  types/            # Interfaces TypeScript
+  routes/           # Archivo de rutas
+```
+
+---
+
+## Funcionalidades Principales
+
+* Diseño responsivo para móvil, tablet y desktop.
+* Animaciones suaves usando AOS.
+* Carrusel de productos hecho en React.
+* Navegación interna por anclas y rutas.
+* Sección “Saber Más” con contenido extenso.
+* Formulario de contacto listo para integrar backend.
+* Estilos originales con variables CSS para colores de marca.
+* Experiencia visual inspirada en productos gourmet/artesanales.
+
+---
+
+## Deploy
+
+Puedes desplegar fácilmente este proyecto en:
+
+* **Vercel**
+* **Netlify**
+* **GitHub Pages**
+
+Si quieres, puedo generarte los archivos de configuración para cualquiera de los tres.
+
+---
+
+## Créditos
+
+* Diseño y desarrollo: **Alan de Jesús Martínez (WasakaBe)**
+* Marca y concepto: **Delvia**
+* Proyecto académico / demostrativo.
+
+---
+
+## Licencia
+
+Este proyecto es de uso académico y demostrativo.
+No está permitida su explotación comercial sin autorización.
+
+---
+
+```
+
+---
+
+Si quieres, también te puedo generar:
+
+- Badges para GitHub (build, version, license, etc.)
+- Una versión del README más visual con imágenes
+- Instrucciones completas para deploy en Vercel, Netlify o GitHub Pages
 ```
